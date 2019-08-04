@@ -28,6 +28,7 @@
 		5522EED222F756AB00CAF52F /* ForecastDecodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5522EED122F756AB00CAF52F /* ForecastDecodeTests.swift */; };
 		5522EED722F756F500CAF52F /* ForecastResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 5522EED522F756F500CAF52F /* ForecastResponse.json */; };
 		5522EED822F756F500CAF52F /* ForecastResponseWithAlert.json in Resources */ = {isa = PBXBuildFile; fileRef = 5522EED622F756F500CAF52F /* ForecastResponseWithAlert.json */; };
+		5522EEDC22F7595200CAF52F /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5522EEDB22F7595200CAF52F /* Keys.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		5522EED122F756AB00CAF52F /* ForecastDecodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastDecodeTests.swift; sourceTree = "<group>"; };
 		5522EED522F756F500CAF52F /* ForecastResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ForecastResponse.json; sourceTree = "<group>"; };
 		5522EED622F756F500CAF52F /* ForecastResponseWithAlert.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ForecastResponseWithAlert.json; sourceTree = "<group>"; };
+		5522EEDB22F7595200CAF52F /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,15 +109,16 @@
 		5522EE9322F755E000CAF52F /* SwiftUI-Weather */ = {
 			isa = PBXGroup;
 			children = (
-				5522EECC22F7566E00CAF52F /* Services */,
-				5522EEC922F7565A00CAF52F /* Models */,
 				5522EEB822F7564400CAF52F /* Extensions */,
+				5522EEC922F7565A00CAF52F /* Models */,
+				5522EECC22F7566E00CAF52F /* Services */,
+				5522EEDD22F7596A00CAF52F /* UI */,
 				5522EE9422F755E000CAF52F /* AppDelegate.swift */,
 				5522EE9622F755E000CAF52F /* SceneDelegate.swift */,
-				5522EE9822F755E000CAF52F /* ContentView.swift */,
 				5522EE9A22F755E100CAF52F /* Assets.xcassets */,
 				5522EE9F22F755E100CAF52F /* LaunchScreen.storyboard */,
 				5522EEA222F755E100CAF52F /* Info.plist */,
+				5522EEDB22F7595200CAF52F /* Keys.plist */,
 				5522EE9C22F755E100CAF52F /* Preview Content */,
 			);
 			path = "SwiftUI-Weather";
@@ -187,6 +190,14 @@
 				5522EED122F756AB00CAF52F /* ForecastDecodeTests.swift */,
 			);
 			path = "Forecast Tests";
+			sourceTree = "<group>";
+		};
+		5522EEDD22F7596A00CAF52F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5522EE9822F755E000CAF52F /* ContentView.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5522EEDC22F7595200CAF52F /* Keys.plist in Resources */,
 				5522EEA122F755E100CAF52F /* LaunchScreen.storyboard in Resources */,
 				5522EE9E22F755E100CAF52F /* Preview Assets.xcassets in Resources */,
 				5522EE9B22F755E100CAF52F /* Assets.xcassets in Resources */,
